@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <div class="display-container">
+            <div id="expression"></div>
+            <div id="display">0</div>
+
+        </div>
+        <div class="mode-row">
+
+            <button id="modeButton"
+                    onclick="changeAngleMode()">
+                DEG
+            </button>
+
+            <button onclick="toggleSecond()">
+                2nd
+            </button>
+
+            <button onclick="useAnswer()">
+                ANS
+            </button>
+
+            <button onclick="clearCalculator()">
+                AC
+            </button>
+
+        </div>
+
+
+        <div class="scientific-buttons">
+            <button onclick="scientificFunction('sin')">
+                sin
+            </button>
+
+            <button onclick="scientificFunction('cos')">
+                cos
+            </button>
+
+            <button onclick="scientificFunction('tan')">
+                tan
+            </button>
+
+            <button onclick="scientificFunction('log')">
+                log
+            </button>
+
+            <button onclick="scientificFunction('ln')">
+                ln
+            </button>
+
+            <button onclick="scientificFunction('sqrt')">
+                √
+            </button>
+
+            <button onclick="scientificFunction('square')">
+                x²
+            </button>
+
+            <button onclick="addOperator('^')">
+                xʸ
+            </button>
+
+            <button onclick="scientificFunction('factorial')">
+                x!
+            </button>
+
+            <button onclick="scientificFunction('inverse')">
+                1/x
+            </button>
+
+            <button onclick="insertConstant('pi')">
+                π
+            </button>
+
+            <button onclick="insertConstant('e')">
+                e
+            </button>
+
+            <button onclick="scientificFunction('tenPower')">
+                10ˣ
+            </button>
+
+            <button onclick="scientificFunction('exp')">
+                eˣ
+            </button>
+
+            <button onclick="scientificFunction('cube')">
+                x³
+            </button>
+
+        </div>
+
+        <div class="memory-buttons">
+
+            <button onclick="memoryClear()">MC</button>
+
+            <button onclick="memoryRecall()">MR</button>
+
+            <button onclick="memoryAdd()">M+</button>
+
+            <button onclick="memorySubtract()">M−</button>
+
+        </div>
+
+        <div class="main-buttons">
+
+            <button class="function"
+                    onclick="deleteLast()">
+                DEL
+            </button>
+
+            <button class="function"
+                    onclick="addParenthesis('(')">
+                (
+            </button>
+
+            <button class="function"
+                    onclick="addParenthesis(')')">
+                )
+            </button>
+
+            <button class="operator"
+                    onclick="addOperator('/')">
+                ÷
+            </button>
+
+
+            <button onclick="addNumber('7')">7</button>
+
+            <button onclick="addNumber('8')">8</button>
+
+            <button onclick="addNumber('9')">9</button>
+
+            <button class="operator"
+                    onclick="addOperator('*')">
+                ×
+            </button>
+
+
+            <button onclick="addNumber('4')">4</button>
+
+            <button onclick="addNumber('5')">5</button>
+
+            <button onclick="addNumber('6')">6</button>
+
+            <button class="operator"
+                    onclick="addOperator('-')">
+                −
+            </button>
+
+
+            <button onclick="addNumber('1')">1</button>
+
+            <button onclick="addNumber('2')">2</button>
+
+            <button onclick="addNumber('3')">3</button>
+
+            <button class="operator"
+                    onclick="addOperator('+')">
+                +
+            </button>
+
+
+            <button onclick="addNumber('0')">
+                0
+            </button>
+
+            <button onclick="addDecimal()">
+                .
+            </button>
+
+            <button onclick="toggleSign()">
+                +/−
+            </button>
+
+            <button class="equals"
+                    onclick="calculate()">
+                =
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="calc.js"></script>
+
+</body>
+</html>
